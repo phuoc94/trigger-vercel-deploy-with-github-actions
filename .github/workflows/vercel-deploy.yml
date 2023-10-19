@@ -6,6 +6,10 @@ on:
   push:
     branches:
       - main
+      
+  repository_dispatch:
+    types:
+      - webhook
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
